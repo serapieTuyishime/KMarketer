@@ -1,0 +1,483 @@
+body{
+    font-family:'Montserrat', sans-serif;
+    background-color: #FAFAFA;
+}
+.navigation{
+    width: 100%;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation__logo{
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.links{
+    height: 100%;
+
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+
+    font-size: 16px;
+    font-weight: 400;
+    color: #737373;
+    padding-top : 50px;
+    padding-bottom : 50px;
+
+}
+
+.spotlight{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-auto-flow: col;
+    
+    gap: 30px;
+
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+    padding: 10px;
+
+}
+.title{
+    font-size: 40px;
+    font-weight: 800; 
+    line-height: 57px; 
+    text-align: center;
+}
+.title--large{
+    font-size: 58px;
+    line-height: 60px;  
+}
+.title--uppercase{
+    text-transform: uppercase;
+}
+.description{
+    text-align: center;
+    /* text-align: left; */
+    font-size: 20px;
+    line-height: 30px;
+    color: #737373;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+.description--justify-left{
+    text-align: left;
+}
+
+.spotlight__buttons{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 14px;
+    width: 100%;
+
+    justify-content: center;
+    justify-items: center;
+}
+.spotlight__desc{
+    /* width: 80%; responsive big-screen */
+    margin-left: auto;
+    margin-right: auto;
+}
+.button{
+    width:fit-content;
+    text-transform: capitalize;
+    border: 0px;
+    background-color: unset;
+    padding: 12px 40px;
+    font-weight: 700;
+    color: white;
+    background-color: #FFA62B;
+
+}
+.button--rounded{
+    border-radius: 37px;
+}
+.button--primary{
+    color: #00A0C1;
+    border: 1px solid #00A0C1;
+    background-color: unset;
+}
+.services{
+    padding: 2rem;
+    height: 100%;
+    background-color: white;
+
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+
+    text-align: center;
+}
+.services__desc{
+    width: 50%;
+}
+.services__cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+
+}
+.card{
+    padding: 2rem;
+    border: 1px solid #737373;
+    width: 12rem;
+}
+.card__header
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.card__icon{
+    height: 24px;
+}
+.card__category{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.card__body{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    text-align: left;
+}
+.slideshow{
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+.slideshow__desc{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
+    height: 100%;
+}
+.slideshow__body{
+    width: 60%;
+}
+.slideshow__title{
+    /* width: 50%; responsive big-screen */
+}
+.slideshow__footer{
+    position: relative;
+    height: 30rem;
+
+}
+ 
+.slideshow__video-area{
+    width: 75%;
+    height: 90%;
+
+    /* margin:  2rem auto; */
+    position:absolute;
+
+    bottom: 2rem;
+    right: 15%;
+    left: 15%;
+    margin: auto;
+}
+.slideshow__video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slideshow__video-player{
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    z-index: 1;
+    top: 40% ;
+    bottom: 40% ;
+    left: 40% ;
+    right: 40% ;
+}
+.slideshow__empty{
+    height: 10rem;
+}
+.slideshow__background{
+    background-color: #16697A;
+    height: 20rem;
+}
+.clients{
+    padding: 2rem;
+    display: grid;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.client-card{
+    padding: 2rem;
+    display: grid;
+    width: 16rem;
+    border: 1px solid #DEDEDE;
+    gap:1rem;
+    border-radius: 5px;
+}
+.l-clients-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: auto;
+    margin-top: 2rem ;
+    justify-content: center;
+}
+.client-card__stars{
+    display: flex;
+    gap: 5px;
+    align-items: left;
+}
+.client-card__desc
+{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+.client-card__footer{
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+}
+.client-card__user-info
+{
+    display: grid;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.client-card__user-name{
+    color: #FFA62B;
+}
+
+.teams__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.team-card{
+    border: none;
+    width: 20rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    align-items: center;
+    display: grid;
+    gap: 1rem;
+    padding: 0px 0px 2rem 0px;
+}
+
+
+.team-card__image{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.team-card__text{
+    display: block;
+    margin: 0px auto;
+}
+
+.team-card__text--bold{
+    font-weight: 700;
+}
+
+.team-card__text--muted{
+    color: #737373;
+}
+
+
+.team-card__socials{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.team-card__icon{
+    width: 18px ;
+}
+
+.team-card__proffesion{
+    font-size: 12px;
+    line-height: 10px;
+    letter-spacing: 0.8px;
+}
+.appointment{
+    /* height: 25rem; */
+    background: url(./img/glasses\ people.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 2rem;
+    box-sizing: border-box;
+}
+.appointment__subtitle{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.appointment__title {
+    width: 60%;
+    text-align: left;
+
+}
+.form{
+    /* width: 50%; responsive big-screen */
+    width: 100%;  
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    
+}
+.form__input{
+    /* width: 14rem; responsive big-screen */
+    width: 18rem; 
+    height: 2rem;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    padding: 2px;
+}
+.form__message{
+    width: 18rem; 
+    /* width: 29.5rem; responsive big-screen */
+    height: 4rem;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+}
+.appointment__button
+{
+    margin-top: 1rem;
+    width: 80%;
+    /* width: auto; responsive in big screen  */
+}
+.consultation{
+    /* padding: 4rem; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    border: 2px solid black;
+    padding: 2rem;
+}
+.consultation__body{
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+.consultation__title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+.consultation__desc{
+    width: 70%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+.consultation__button{
+    width: 90%;
+    /* width: auto; responsive in big screen  */
+}
+.footer{
+    background: #252B42;
+    padding: 1rem 0;
+    color: #FFFFFF;
+}
+.footer__logo{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+.footer__socials{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.footer__icons{
+    display: flex;
+    justify-content: left;
+    gap: 5px;
+}
+.footer__icons{
+    display: flex;
+
+}
+.footer__links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.links{
+    width: 14rem;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+    padding: 1rem;
+    padding-left: 2rem;
+}
+.links__header{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+.newsletter{
+    padding: 1rem;
+}
+.newsletter__header{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+.newsletter__input{
+    height: 2.1rem;
+    margin-right: -5px;
+}
+.newsletter__footer{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+
+}
+.makers{
+    width: 100%;
+    padding: 1rem 5rem;
+    background-color:  #16697A;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
