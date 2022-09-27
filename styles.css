@@ -9,7 +9,9 @@ body{
     align-items: center;
     padding: 2rem;
 }
-
+.navigation--big-screen{
+    display: none;
+}
 .navigation__links{
     display: flex;
     gap:1.5rem;
@@ -112,6 +114,10 @@ body{
 .description--justify-left{
     text-align: left;
 }
+.description--not-padded{
+    padding: unset;
+
+}
 
 .spotlight__buttons{
     display: grid;
@@ -203,10 +209,6 @@ body{
     height: 100%;
 }
 
-.slideshow__title{
-
-    /* width: 50%; responsive big-screen */
-}
 .slideshow__footer{
     position: relative;
     height: 30rem;
@@ -377,8 +379,6 @@ body{
 
 }
 .form{
-    /* width: 50%; responsive big-screen */
-    /* width: 100%;   */
 
     display: flex;
     flex-wrap: wrap;
@@ -405,18 +405,17 @@ body{
 {
     margin-top: 1rem;
     width: 95%;
-    /* width: auto; responsive in big screen  */
 }
 .consultation{
-    /* padding: 4rem; */
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-auto-flow: row;
     gap: 1rem;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 2rem;
+    margin: 3rem 0rem;
+
 }
 .consultation__body{
-    padding: 2rem;
     display: grid;
     gap: 1rem;
 }
@@ -521,6 +520,9 @@ body{
     .navigation--small-screen{
         display: none;
     }
+    .navigation--big-screen{
+        display: flex;
+    }
     .top-links{
         display: none;
     }
@@ -537,6 +539,39 @@ body{
     }
     .spotlight__buttons{
         grid-auto-flow: column;
+    }
+    .appointment{
+        padding: 0rem 7rem;
+    }
+    .consultation{
+        padding: 0rem 7rem;
+    }
+    .form{
+        width: 60%;
+    }
+    .button--block{
+        width: 40%;
+    }
+    .form__input{
+        width: 14rem;
+    }
+    .form__message{
+        width: 29.5rem;
+    }
+    .button--block
+    {
+        width: auto;
+    }
+    .appointment__title {
+        padding: unset;
+    
+    }
+    .consultation{
+        grid-auto-flow: column;
+    }
+    .description--not-padded{
+
+        padding: unset;
     }
 
 }
