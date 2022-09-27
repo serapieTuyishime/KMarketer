@@ -10,7 +10,7 @@
       rel="stylesheet">
 </head>
 <body>
-    <div class="navigation">
+    <div class="navigation navigation--small-screen">
         <div class="navigation__logo">
             KMarketer
         </div>
@@ -20,18 +20,33 @@
             <span class="material-icons">menu</span>
         </div>
     </div>
-    <div class="links">
+    <div class="navigation navigation--big-screen">
+        <div class="navigation__logo">
+            KMarketer
+        </div>
+        <div class="navigation__links">
+            <label>Home</label>
+            <label>Products</label>
+            <label>Pricing</label>
+            <label>Contacts</label>
+            <span class="material-icons material-icons--padded">search</span>
+            <span class="material-icons">shopping_cart</span>
+        </div>
+        <span class="material-icons navigation__menu">menu</span>
+
+    </div>
+    <div class="top-links">
         <label>Home</label>
         <label>Products</label>
         <label>Pricing</label>
         <label>Contacts</label>
     </div>
     <div class="spotlight">
-        <div class="title">
+        <div class="title title--large ">
             Experts are here solve 
             your business problem.
         </div>
-        <div class="spotlight__desc description ">
+        <div class="description  description--text-lg  ">
             We know how large objects will act, but things on a 
             small scale just do not act that way.
         </div>
@@ -41,8 +56,8 @@
         </div>
     </div>
     <div class="services">
-        <label class="title title--uppercase">why choose us</label>
-        <p class="services__desc description ">Problems trying to resolve the 
+        <label class="  title title--uppercase">why choose us</label>
+        <p class="description ">Problems trying to resolve the 
             conflict between the two major realms of 
             Classical physics: Newtonian mechanics </p>
         <div class="services__cards">
@@ -128,15 +143,18 @@
     </div>
     <div class="slideshow "  >
         <div class="slideshow__desc">
-            <div class="slideshow__title title">We are providing best business services</div>
-            <div class="slideshow__body description">
+            <div class="title ">We take care 
+            customers our all expert here.</div>
+            <div class="description ">
                 Problems trying to resolve the conflict between 
                 the two major realms of Classical physics: Newtonian mechanics 
             </div>
         </div>
         <div class="slideshow__footer">
             <div class="slideshow__empty"></div>
+
             <div class="slideshow__background"></div>
+
             <div class="slideshow__video-area">
                 <img src="./img/meeting room.jpg" class="slideshow__video">
                 <img src="./img/play.png" class="slideshow__video-player">
@@ -146,10 +164,10 @@
 
     </div>
     <div class="clients">
-        <div class="title">
+        <div class=" title--capitalize title">
             what clients say
         </div>
-        <div class="description">Problems trying to resolve 
+        <div class=" description ">Problems trying to resolve 
             the conflict between the two major 
             realms of Classical physics: 
             Newtonian mechanics 
@@ -222,8 +240,8 @@
         </div>
     </div>
     <div class="teams">
-        <div class="title">Meet Our Team</div>
-        <div class="description">
+        <div class=" title">Meet Our Team</div>
+        <div class=" description ">
             Problems trying to resolve the conflict between 
             the two major realms of Classical physics: Newtonian mechanics
         </div>
@@ -283,7 +301,7 @@
             <input class="form__message" type="text">
 
         </form>
-        <button class="appointment__button button">
+        <button class="button button--block">
             Book Appointment
         </button>
     </div>
@@ -293,12 +311,12 @@
                 Consulting Agency 
                 For Your Business
             </div>
-            <div class="consultation__desc">
+            <div class="description description--justify-left">
                 the quick fox jumps over 
                 the lazy dog
             </div>
         </div>
-        <button class="consultation__button button">Contact Us</button>
+        <button class="button--block button">Contact Us</button>
     </div>
     <div class="footer">
         <div class="footer__socials">
@@ -353,10 +371,10 @@
             </div>
             
         </div>
-        <div class="makers">
-            Made With Love By 
-            Figmaland All Right Reserved 
-        </div>
+    </div>
+    <div class="makers">
+        Made With Love By 
+        Figmaland All Right Reserved 
     </div>
 
 </body>
