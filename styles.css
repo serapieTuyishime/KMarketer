@@ -255,6 +255,9 @@ body{
     gap: 5px;
     align-items: left;
 }
+.client-card__star{
+    margin: 0 3px;
+}
 .client-card__desc
 {
     font-weight: 600;
@@ -431,8 +434,9 @@ body{
     justify-content: left;
     gap: 5px;
 }
-.footer__icons{
-    display: flex;
+.footer__icon{
+    margin: 0 3px;
+    object-fit: contain;
 
 }
 .footer__links{
@@ -445,14 +449,17 @@ body{
     text-align: left;
     flex-direction: column;
     gap: 1rem;
+    
+}
+.links__link
+{
     color: white;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.2px;
     font-weight: 300;
-
 }
-.links__header{
+.links__link--bolded{
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
