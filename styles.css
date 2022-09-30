@@ -15,12 +15,14 @@ body{
     display: flex;
     gap:1.5rem;
     width : 40%;
+    justify-content: right;
+}
+.navigation__link{
     font-size: 14px;
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.2px;
     color: #737373;
-    justify-content: right;
 }
 .material-icons--padded{
     margin-left: 1rem;
